@@ -1,0 +1,49 @@
+.background-blue {
+    padding-bottom: 0px;
+}
+
+.logo-transmedic {
+    width: 30%;
+}
+
+.border-btn {
+    border-width: 2px; 
+    border-color: ghostwhite; 
+    border-style: solid;
+    color: white;
+    background-color: transparent;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.border-btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+.border-btn:hover {
+    background-color: white;
+    color: black;
+  /*  Making button bigger on hover  */
+    transform: scale(1.2) perspective(1px)
+}
+  
+.div-benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    #navbar-logo {
+        visibility: hidden;
+    }
+}
+
+nav li a {
+    font-size: 20px;
+}

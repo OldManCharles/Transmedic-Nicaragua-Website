@@ -1,5 +1,6 @@
 .background-blue {
     padding-bottom: 0px;
+    background-color: #0287ba;
 }
 
 .logo-transmedic {
@@ -46,4 +47,36 @@ h1, h2 {
 
 nav li a {
     font-size: 20px;
+}
+
+nav {
+    height: 120px;
+    line-height: 120px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 120px;
+    line-height: 120px;
+}
+
+nav .button-collapse i {
+    height: 120px;
+    line-height: 120px;
+}
+
+nav .brand-logo { 
+    font-size: 1.6rem; 
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 120px;
+        line-height: 120px;
+    }
+}
+
+.benefits-list ul {
+    color: whitesmoke;
+    font-size: 1.3rem;
+    text-align: left;
 }

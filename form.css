@@ -8,7 +8,8 @@
 }
 
 html, body {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
+  background: white;
   font-family: 'Merriweather', sans-serif;
 }
 
@@ -16,6 +17,12 @@ html, body {
   text-align: center;
   color: #a8a8a8;
   text-shadow: 1px 1px 0 white;
+}
+
+.black-h1 {
+    text-align: center;
+    color: #3c3c3d;
+    text-shadow: 1px 1px 0 black;
 }
 
 form {

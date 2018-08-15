@@ -1,3 +1,13 @@
+/* 
+
+Color palette:
+    Light bright -> #6dd9e6
+    Light medium -> #56c8e2
+    Medium -> #2cc0da
+    Dark medium -> #2ba8d8
+    Dark -> #1e8fdf
+ */
+
 .background-blue {
     padding-bottom: 0px;
     background-color: #0287ba;
@@ -9,9 +19,9 @@
 
 .border-btn {
     border-width: 2px; 
-    border-color: ghostwhite; 
+    border-color: rgb(39, 39, 39); 
     border-style: solid;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: transparent;
 }
 
@@ -26,10 +36,14 @@ h1, h2 {
 }
 
 .border-btn:hover {
-    background-color: white;
-    color: black;
+    color: white;
+    background-color: black;
   /*  Making button bigger on hover  */
     transform: scale(1.2) perspective(1px)
+}
+
+.title-headers {
+    background-color: #0000ba;
 }
   
 .div-benefits {
@@ -47,6 +61,7 @@ h1, h2 {
 
 nav li a {
     font-size: 20px;
+    color: black;
 }
 
 nav {
@@ -75,8 +90,15 @@ nav .brand-logo {
     }
 }
 
-.benefits-list ul {
+.feature-icon {
+    border-style: solid;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border-color: gray;
+    background-color: skyblue;
     color: whitesmoke;
-    font-size: 1.3rem;
-    text-align: left;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }

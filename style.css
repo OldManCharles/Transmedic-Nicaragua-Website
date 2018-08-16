@@ -8,6 +8,10 @@ Color palette:
     Dark -> #1e8fdf
  */
 
+ a, h4 {
+    font-family: 'Roboto', sans-serif;
+ }
+
 .background-blue {
     padding-bottom: 0px;
     background-color: #0287ba;
@@ -91,14 +95,32 @@ nav .brand-logo {
 }
 
 .feature-icon {
-    border-style: solid;
+    /* border-style: solid;
     width: 4em;
     height: 4em;
     border-radius: 50%;
     border-color: gray;
-    background-color: skyblue;
-    color: whitesmoke;
+    background-color: #0000ba;
+    color: whitesmoke;*/
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    border: double 4px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 196, 0),#0051ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: #0000ba;
 }

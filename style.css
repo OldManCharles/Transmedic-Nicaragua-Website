@@ -21,6 +21,18 @@ Color palette:
     width: 30%;
 }
 
+.header-text {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.content-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon-blue {
+    color: #0000ba;
+}
+
 .border-btn {
     border-width: 2px; 
     border-color: rgb(39, 39, 39); 
@@ -47,7 +59,7 @@ h1, h2 {
 }
 
 .title-headers {
-    background-color: #0000ba;
+    background-color: #56c8e2;
 }
   
 .div-benefits {

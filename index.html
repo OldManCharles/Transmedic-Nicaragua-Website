@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="orange darken-1 div-benefits">
+        <div class="title-headers div-benefits">
             <h1 class="center header-text">Costos</h1>
         </div>
             <div>
@@ -110,7 +110,7 @@
                 </div>
                     <div>
                         <div class="row benefits-list container">
-                            <div class="col m6">
+                            <div class="col m5">
                                 <h4><strong>Visitas a Hospital</strong></h4>
                                 <div> <!--Feature-->
                                     <div style="float: left;" class="feature-icon"><div class="inner"><i class="far fa-hospital fa-2x"></i></div></div> <!--Icon-->
@@ -127,7 +127,8 @@
                                     <div style="margin-left: 65px;"><p>Especialista</p></div>
                                 </div>
                                 <div> <!--Feature-->
-                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fa fa-car fa-3x"></i></div></div> <!--Icon-->
+                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fas fa-pills fa-2x"></i>
+                                    </div></div> <!--Icon-->
                                     <div style="margin-left: 65px;">
                                         <h5>$100</h5> <!--Title-->
                                     </div>
@@ -141,14 +142,17 @@
                                     <div style="margin-left: 65px;"><p>+ Transporte, Tiempo, Parqueos, Filas</p></div>
                                 </div>
                                 <div> <!--Feature-->
-                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fa fa-car fa-3x"></i></div></div> <!--Icon-->
+                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fas fa-money-bill-wave fa-2x"></i></div></div> <!--Icon-->
                                     <div style="margin-left: 65px;">
                                         <h5>$1000</h5> <!--Title-->
                                     </div>
                                     <div style="margin-left: 65px;"><p>Total</p></div>
                                 </div>
                             </div>
-                            <div class="col m6">
+                            <div class="col m1 aligner">
+                                <h1 style="color: black;">VS</h1>
+                            </div>
+                            <div class="col m5">
                                 <h4><strong>Servicio a domicilio</strong></h4>
                                 <div> <!--Feature-->
                                     <div style="float: left;" class="feature-icon"><div class="inner"><i class="fas fa-user fa-2x"></i></div></div> <!--Icon-->
@@ -165,21 +169,21 @@
                                     <div style="text-align: left; margin-left: 65px;"><p>Copago</p></div>
                                 </div>
                                 <div> <!--Feature-->
-                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fa fa-car fa-3x"></i></div></div> <!--Icon-->
+                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fas fa-prescription-bottle-alt fa-2x"></i></div></div> <!--Icon-->
                                     <div style="margin-left: 65px;">
                                         <h5>$50</h5> <!--Title-->
                                     </div>
                                     <div style="text-align: left; margin-left: 65px;"><p>Dosis de medicamentos</p></div>
                                 </div>
                                 <div> <!--Feature-->
-                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fa fa-car fa-3x"></i></div></div> <!--Icon-->
+                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fas fa-ambulance fa-2x"></i></div></div> <!--Icon-->
                                     <div style="margin-left: 65px;">
                                         <h5>$50</h5> <!--Title-->
                                     </div>
                                     <div style="text-align: left; margin-left: 65px;"><p>Traslado en caso de emergencia</p></div>
                                 </div>
                                 <div> <!--Feature-->
-                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fa fa-car fa-3x"></i></div></div> <!--Icon-->
+                                    <div style="float: left;" class="feature-icon"><div class="inner"><i class="fas fa-money-bill-wave fa-2x"></i></div></div> <!--Icon-->
                                     <div style="margin-left: 65px;">
                                         <h5>$50</h5> <!--Title-->
                                     </div>
@@ -187,6 +191,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="center" style="margin-bottom: 50px;">
                             <a class="waves-effect waves-teal btn-flat border-btn header-text" style="width: 80%;">Suscribirse a Transmedic Nicaragua</a>
                         </div>
@@ -205,19 +210,36 @@
                     <p class="content-text" style="color: whitesmoke;">Disfruta de todos los beneficios mencionados y más. Llena el formulario siguiente o llámanos a cualquiera de nuestros números de
                         teléfono. Sin compromiso.</p>
                     <p class="content-text" style="color: whitesmoke;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minus unde nihil earum provident nam dicta, quibusdam voluptas omnis dolorum odio harum cupiditate laborum quisquam nulla ipsum alias accusantium deleniti?</p>
+                    <h6 style="color:whitesmoke; font-weight: bold;">¡Síguenos en Facebook!</h6>
+                    <a class="social-media-link" href=""><i class="fab fa-facebook fa-4x"></i></a>
                 </div>
                 <div class="col m6">
-                    <h4 class="elegant-h1">Contacto</h4>
-                        <form class="cf" method="POST">
-                            <div class="half left cf">
-                                <input type="text" id="input-name" placeholder="Nombre completo">
-                                <input type="email" id="input-email" placeholder="Correo Electrónico">
-                                <input type="text" id="input-subject" placeholder="Tema">
+                    <h4 class="header-text" style="color:whitesmoke;">Contacto</h4>
+                    <form method="POST">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="fa fa-user prefix"></i>
+                                <input id="user_name" type="text" class="validate">
+                                <label for="user_name">Nombre</label>
                             </div>
-                            <div class="half right cf">
-                                <textarea name="message" type="text" id="input-message" placeholder="Mensaje"></textarea>
-                            </div>  
-                        <input type="submit" value="Enviar" id="input-submit">
+                            <div class="input-field col s6">
+                                <i class="fa fa-phone prefix"></i>
+                                <input id="user_phone" type="text" class="validate">
+                                <label for="user_phone">Teléfono</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="fa fa-at prefix"></i>
+                                <input type="email" name="" id="user_email" class="validate">
+                                <label for="user_email">E-mail</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="fa fa-envelope-open prefix"></i>
+                                <textarea class="materialize-textarea" name="" id="user_message" cols="50" rows="50"></textarea>
+                                <label for="user_message">Mensaje</label>
+                            </div>    
+                        </div>
                     </form>
                 </div>
             </div>

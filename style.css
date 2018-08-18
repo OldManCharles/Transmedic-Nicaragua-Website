@@ -8,10 +8,8 @@ Color palette:
     Dark -> #1e8fdf
  */
 
- .elegant-h1 {
-    text-align: center;
-    color: #a8a8a8;
-    text-shadow: 1px 1px 0 white;
+.header-primary {
+    color: #2fa3ad;
 }
 
 .black-h1 {
@@ -31,6 +29,12 @@ Color palette:
 
 .logo-transmedic {
     width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .title-buttons {
+        visibility: hidden;
+    }
 }
 
 .header-text {
@@ -81,8 +85,8 @@ Color palette:
     color: #0051ff;
 }
 
-h1, h2 {
-    color: white;
+.dropdown-content {
+    font-weight: bold;
 }
 
 .border-btn:active {
@@ -116,12 +120,12 @@ h1, h2 {
 }
 
 nav li a {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
 }
 
 nav {
-    height: 120px;
+    height: 100px;
     line-height: 120px;
 }
 

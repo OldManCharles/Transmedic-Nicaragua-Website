@@ -16,13 +16,13 @@
 }
 
 .row .input-field input {
-  border-bottom: 1px solid whitesmoke !important;
-  box-shadow: 0 1px 0 0 whitesmoke !important
+  border-bottom: 1px solid #2fa3ad !important;
+  box-shadow: 0 1px 0 0 #2fa3ad !important
 }
 
 .row .materialize-textarea {
-  border-bottom: 1px solid whitesmoke !important;
-  box-shadow: 0 1px 0 0 whitesmoke !important;
+  border-bottom: 1px solid #2fa3ad !important;
+  box-shadow: 0 1px 0 0 #2fa3ad !important;
 }
 
 .row .materialize-textarea:focus {
@@ -32,12 +32,12 @@
 
 /* label color */
 .input-field label {
-  color: whitesmoke;
+  color: #2fa3ad;
 }
 
 /* icon prefix focus color */
 .input-field .prefix {
-  color: whitesmoke;
+  color: #2fa3ad;
 }
 
 /* icon prefix focus color */

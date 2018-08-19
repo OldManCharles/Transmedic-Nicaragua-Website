@@ -118,6 +118,21 @@
         </li>
     </ul>
 
+    <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!">
+            <img src="https://lorempixel.com/1000/800/">
+        </a>
+        <a class="carousel-item" href="#two!">
+            <img src="https://lorempixel.com/1000/800/">
+        </a>
+        <a class="carousel-item" href="#three!">
+            <img src="https://lorempixel.com/1000/800/">
+        </a>
+        <a class="carousel-item" href="#four!">
+            <img src="https://lorempixel.com/1000/800/">
+        </a>
+    </div>
+
     <div class="container">
         <h2 class="header-primary">Nuestros Servicios</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ornare massa, nec cursus lorem. Nam tristique
@@ -270,9 +285,16 @@
                             minima, perferendis magnam nesciunt.</p>
                     </div>
                     <div class="col m6">
-
+                        <h5 style="font-weight: bold; color: whitesmoke;">¡Síguenos en Facebook!</h5>
+                        <hr>
+                        <a href="#">
+                            <i class="fab fa-facebook fa-4x"></i>
+                        </a>
                     </div>
                 </div>
+            </div>
+            <div style="background-color: black; height: 50px;" class="copyright">
+                <p style="color: whitesmoke; margin-left: 30px;">Copyright Transmedic Nicaragua © All rights reserved</p>
             </div>
         </div>
     </div>
@@ -286,6 +308,20 @@
         $(document).ready(function () {
             $('.sidenav').sidenav();
             $(".dropdown-trigger").dropdown();
+            $('.carousel.carousel-slider').carousel({
+                dist: 0,
+                padding: 0,
+                fullWidth: true,
+                indicators: true,
+                duration: 100,
+            });
+
+            autoplay();
+
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4500);
+            }
         });
     </script>
 </body>

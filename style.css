@@ -12,6 +12,11 @@ Color palette:
     color: #2fa3ad;
 }
 
+.copyright {
+    display: flex;
+    align-content: center;
+}
+
 .black-h1 {
     text-align: center;
     color: #3c3c3d;

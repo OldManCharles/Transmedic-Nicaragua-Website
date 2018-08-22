@@ -9,6 +9,10 @@
   font-weight: bold;
 }
 
+.file-path::placeholder {
+  color: #2fa3ad;
+}
+
 /* label underline focus color */
 .row .input-field input:focus {
   border-bottom: 1px solid #0051ff !important;

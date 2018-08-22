@@ -12,6 +12,19 @@ Color palette:
     color: #2fa3ad;
 }
 
+@media only screen and (min-width: 700px) {
+    
+    .article-image-left {
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .article-image-right {
+        float: right;
+        margin-left: 5px;
+    }
+}
+
 .header-primary-bold {
     color: #2fa3ad;
     font-weight: bold;

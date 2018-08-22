@@ -12,6 +12,11 @@ Color palette:
     color: #2fa3ad;
 }
 
+.header-primary-bold {
+    color: #2fa3ad;
+    font-weight: bold;
+}
+
 .copyright {
     display: flex;
     align-content: center;

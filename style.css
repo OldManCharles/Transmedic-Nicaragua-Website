@@ -12,13 +12,39 @@ Color palette:
     color: #2fa3ad;
 }
 
+@media only screen and (max-width: 700px) {
+    .carousel {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .hero-content {
+        display: none;
+    }
+}
+
+.cover-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-content {
+    width: 100%;
+    position: absolute;
+}
+
+.hero-content h1 {
+    text-align: center;
+}
+
 @media only screen and (min-width: 700px) {
-    
     .article-image-left {
         float: left;
         margin-right: 5px;
     }
-    
     .article-image-right {
         float: right;
         margin-left: 5px;
@@ -41,9 +67,11 @@ Color palette:
     text-shadow: 1px 1px 0 black;
 }
 
- a, h4, p {
+a,
+h4,
+p {
     font-family: 'Roboto', sans-serif;
- }
+}
 
 .background-blue {
     padding-bottom: 0px;
@@ -52,6 +80,10 @@ Color palette:
 
 .logo-transmedic {
     width: 30%;
+}
+
+.header-white {
+    color: whitesmoke;
 }
 
 @media only screen and (max-width: 600px) {
@@ -70,15 +102,12 @@ Color palette:
 
 .aligner {
     display: -ms-flexbox;
-	display: -webkit-flex;
+    display: -webkit-flex;
     display: flex;
-    
     margin-right: 78.7px;
-
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	-webkit-box-align: center;
-
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
     align-items: center;
 }
 
@@ -93,19 +122,69 @@ Color palette:
 }
 
 .border-btn {
-    border-width: 2px; 
-    border-color: rgb(39, 39, 39); 
+    border-width: 2px;
+    border-color: rgb(39, 39, 39);
     border-style: solid;
     color: rgb(0, 0, 0);
     background-color: transparent;
+}
+
+.border-btn-white {
+    border-width: 2px;
+    border-color: rgb(109, 109, 109);
+    border-style: solid;
+    color: rgb(243, 243, 243);
+    font-weight: bolder;
+    background-color: #0051ff !important;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+.border-btn-white:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+.border-btn-white:hover {
+    color: white;
+    background-color: black;
+    /*  Making button bigger on hover  */
+    transform: scale(1.2) perspective(1px)
 }
 
 .social-media-link {
     color: whitesmoke;
 }
 
+.social-media-link-dark {
+    color: #0287ba;
+}
+
 .social-media-link:hover {
     color: #0051ff;
+}
+
+.social-media-link-dark:hover {
+    color: #b4b4b4;
 }
 
 .dropdown-content {
@@ -121,20 +200,19 @@ Color palette:
 .border-btn:hover {
     color: white;
     background-color: black;
-  /*  Making button bigger on hover  */
+    /*  Making button bigger on hover  */
     transform: scale(1.2) perspective(1px)
 }
 
 .title-headers {
-    background-color: #56c8e2;
+    background-color: #2ba8d8;
 }
-  
+
 .div-benefits {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 
 @media screen and (max-width: 600px) {
     #navbar-logo {
@@ -152,7 +230,10 @@ nav {
     line-height: 120px;
 }
 
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
     height: 120px;
     line-height: 120px;
 }
@@ -162,12 +243,15 @@ nav .button-collapse i {
     line-height: 120px;
 }
 
-nav .brand-logo { 
-    font-size: 1.6rem; 
+nav .brand-logo {
+    font-size: 1.6rem;
 }
 
-@media only screen and (min-width: 601px){
-    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+@media only screen and (min-width: 601px) {
+    nav,
+    nav .nav-wrapper i,
+    nav a.button-collapse,
+    nav a.button-collapse i {
         height: 120px;
         line-height: 120px;
     }
@@ -184,12 +268,11 @@ nav .brand-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 60px;
     height: 60px;
     border: double 4px transparent;
     border-radius: 80px;
-    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 196, 0),#0051ff);
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 196, 0), #0051ff);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }

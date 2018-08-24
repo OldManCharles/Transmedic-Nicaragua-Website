@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="form.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Transmedic Nicaragua - INICIO</title>
 </head>
 
@@ -114,6 +115,9 @@
                 <li>
                     <a href="index.html#contacto">Contacto</a>
                 </li>
+                <li>
+                    <a href="curso.html">Curso de primeros auxilios</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -132,6 +136,9 @@
         </li>
         <li>
             <a href="index.html#contacto">Contacto</a>
+        </li>
+        <li>
+            <a href="curso.html">Curso de primeros auxilios</a>
         </li>
     </ul>
 
@@ -204,7 +211,7 @@
         <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
             <h2 class="header-primary">Quiénes Somos</h2>
             <div class="row">
-                <div class="col m9">
+                <div class="col m8">
                     <p>Nos especializamos en brindar atención integral al adulto mayor a domicilio y contamos con el personal
                         capacitado para atender cualquier necesidad que pueda tener. Nuestro servicio es a domicilio, porque
                         sabemos que el mejor cuidado que se le debe brindar a nuestro adulto mayor es en su casa de habitación,
@@ -220,7 +227,10 @@
                     <p>Ser la red de cuido y atención integral del adulto mayor a domicilio más grande del país que brinde una
                         atención profesional y mayor calidad de vida y bienestar a nuestros pacientes y sus familias.
                     </p>
-                    <a href="#" class="btn">¡Aplica a nuestro servicio!</a>
+                    <a href="#contacto" class="btn waves-effect">¡Aplica a nuestro servicio!</a>
+                </div>
+                <div class="col m4" style="margin-top: 10px;">
+                    <img src="images/ambulancia-dentro.jpeg" alt="" class="responsive-img">
                 </div>
             </div>
         </div>
@@ -233,14 +243,15 @@
             </div>
             <div class="col m8">
                 <h2 class="header-primary">Capacitaciones</h2>
-                <h5 class="header-primary">Lorem Ipsum</h5>
+                <h5 class="header-primary">Curso de primeros auxilios</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, cupiditate vitae voluptatibus dolorum, nihil
                     esse possimus nulla magnam aspernatur suscipit natus quibusdam tempora quod itaque non corrupti at, tenetur
-                    laborum!
+                    laborum! <a href="#curso.html"><u>¡Aprende más!</u></a>
                 </p>
                 <h5 class="header-primary">Lorem Ipsum</h5>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit at, sunt officiis dicta libero deleniti quisquam
                     vero maiores voluptate asperiores minus, id magnam tempore a numquam? Consectetur quisquam id quaerat?</p>
+                <a href="#contacto" class="btn waves-effect">Inscríbete a nuestro curso</a>
             </div>
         </div>
     </div>
@@ -256,28 +267,28 @@
                         velit atque nemo, officiis illum vel ratione enim aliquam eveniet. Sint totam nam minima nulla.</p>
                 </div>
                 <div class="col m6">
-                    <form method="POST">
+                    <form method="POST" action="https://formspree.io/carlospe097@outlook.com">
                         <div class="row">
                             <div class="input-field col s6">
                                 <i class="fa fa-user prefix"></i>
-                                <input id="user_name" type="text" class="validate">
+                                <input id="user_name" name="nombre" type="text" class="validate">
                                 <label for="user_name">Nombre</label>
                             </div>
                             <div class="input-field col s6">
                                 <i class="fa fa-phone prefix"></i>
-                                <input id="user_phone" type="text" class="validate">
+                                <input id="user_phone" name="telefono" type="tel" class="validate">
                                 <label for="user_phone">Teléfono</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="fa fa-at prefix"></i>
-                                <input type="email" name="" id="user_email" class="validate">
+                                <input type="email" name="e-mail" id="user_email" class="validate">
                                 <label for="user_email">E-mail</label>
                             </div>
                             <div class="input-field col s12">
                                 <i class="fa fa-envelope-open prefix"></i>
-                                <textarea class="materialize-textarea" name="" id="user_message" cols="50" rows="50"></textarea>
+                                <textarea class="materialize-textarea" name="mensaje" id="user_message" cols="50" rows="50"></textarea>
                                 <label for="user_message">Mensaje</label>
                             </div>
                             <div class="input-field col s12">

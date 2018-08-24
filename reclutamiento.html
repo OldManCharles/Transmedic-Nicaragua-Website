@@ -160,33 +160,33 @@
 
         <div>
             <h6 class="header-primary-bold">¡Completa el formulario siguiente si estás interesado en formar parte de nuestro personal!</h6>
-            <form method="POST" style="margin-top: 20px;">
+            <form method="POST" action="https://formspree.io/carlospe097@outlook.com" style="margin-top: 20px;">
                 <div class="row">
                     <div class="input-field col s12">
-                        <select>
-                            <option value="" disabled selected>Elija un cargo</option>
-                            <option value="1">Primeros Auxilios</option>
-                            <option value="2">Médico General</option>
-                            <option value="3">Fisioterapeuta</option>
-                            <option value="">Transportista</option>
+                        <select name="cargo">
+                            <option value="0" disabled selected>Elija un cargo</option>
+                            <option value="PrimerosAuxilios">Primeros Auxilios</option>
+                            <option value="MedicoGeneral">Médico General</option>
+                            <option value="Fisioterapeuta">Fisioterapeuta</option>
+                            <option value="Transportista">Transportista</option>
                         </select>
                         <label>Cargo a ejercer</label>
                     </div>
                     <div class="input-field col s6">
                         <i class="fa fa-user prefix"></i>
-                        <input id="user_name" type="text" class="validate">
+                        <input id="user_name" name="nombre" type="text" class="validate">
                         <label for="user_name">Nombre</label>
                     </div>
                     <div class="input-field col s6">
                         <i class="fa fa-phone prefix"></i>
-                        <input id="user_phone" type="text" class="validate">
+                        <input id="user_phone" name="telefono" type="tel" class="validate">
                         <label for="user_phone">Teléfono</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fa fa-at prefix"></i>
-                        <input type="email" name="" id="user_email" class="validate">
+                        <input type="email" name="e-mail" id="user_email" class="validate">
                         <label for="user_email">E-mail</label>
                     </div>
                     <div class="file-field input-field col s12">
@@ -201,7 +201,7 @@
                     </div>
                     <div class="input-field col s12">
                         <i class="fa fa-envelope-open prefix"></i>
-                        <textarea class="materialize-textarea" name="" id="user_message" cols="50" rows="50"></textarea>
+                        <textarea class="materialize-textarea" name="mensaje" id="user_message" cols="50" rows="50"></textarea>
                         <label for="user_message">Mensaje</label>
                     </div>
                     <div class="input-field col s12">
